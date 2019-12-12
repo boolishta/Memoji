@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>Memoji</title>
+</head>
+<body>
+    <div class="title">
+      <span onclick="window.location.href=window.location.href">Memoji</span>
+    </div>
+    <ul id="allCards" class="cards">
+      <li id="a1" class="card">
+        <div class="back"></div>
+        <div class="front"></div>
+      </li>
+      <li id="a2" class="card">
+        <div class="back"></div>
+        <div class="front"></div>
+      </li>
+      <li id="a3" class="card">
+        <div class="back"></div>
+        <div class="front"></div>
+      </li>
+      <li id="a4" class="card">
+        <div class="back"></div>
+        <div class="front"></div>
+      </li>
+      <li id="b1" class="card">
+        <div class="back"></div>
+        <div class="front"></div>
+      </li>
+      <li id="b2" class="card">
+        <div class="back"></div>
+        <div class="front"></div>
+      </li>
+      <li id="b3" class="card">
+        <div class="back"></div>
+        <div class="front"></div>
+      </li>
+      <li id="b4" class="card">
+        <div class="back"></div>
+        <div class="front"></div>
+      </li>
+      <li id="c1" class="card">
+        <div class="back"></div>
+        <div class="front"></div>
+      </li>
+      <li id="c2" class="card">
+        <div class="back"></div>
+        <div class="front"></div>
+      </li>
+      <li id="c3" class="card">
+        <div class="back"></div>
+        <div class="front"></div>
+      </li>
+      <li id="c4" class="card">
+        <div class="back"></div>
+        <div class="front"></div>
+      </li>
+    </ul>
+    <div id="timer">00:60</div>
+    <div id="win">
+      <div class="modal">
+          <div class="container">
+              <span class="char1">W</span>
+              <span class="char2">i</span>
+              <span class="char3">n</span><br>
+              <button class="btn" type="button" onclick="reset()">Play again</button>
+            </div>
+      </div>
+    </div>
+    <div id="lose">
+      <div class="modal">
+        <div class="container">
+            <span class="char1">L</span>
+            <span class="char2">o</span>
+            <span class="char3">s</span>
+            <span class="char4">e</span><br>
+            <button class="btn" type="button" onclick="reset()">Try again</button>
+          </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

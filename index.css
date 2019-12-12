@@ -1,0 +1,190 @@
+
+body {
+  background-color: #cfd0cf;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  color: #434344;
+  line-height: 47px;
+  text-align: center;
+}
+
+.title {
+  margin: 40px auto;
+  width: 650px;
+}
+
+ul {
+  width: 650px;
+  display: block;
+  list-style-type: none;
+  margin: 40px auto;
+  perspective: 600px;
+}
+
+.card {
+  display: block;
+  float: left;
+  cursor: pointer;
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 9px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  transition: 0;
+}
+
+.back.is-flipped {
+ transform: rotateY(180deg);
+}
+.front.is-flipped {
+  transform: rotateY(360deg);
+}
+
+.back, .front {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transition: 550ms;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.back {
+  background: linear-gradient(45deg, #22ab93, #19668d);
+  border-radius: 9px;
+  width: 120px;
+  height: 120px;
+  border: 5px solid white;
+}
+
+.front {
+  width: 100%;
+  height: 100%;
+  font-size: 75px;
+  background: white;
+  border-radius: 9px;
+  transform: rotateY(180deg);
+}
+
+.front.same {
+  background: #5AD66F;
+  pointer-events: none;
+}
+
+.front.notsame {
+  background: #f44336;
+  pointer-events: none;
+}
+
+#c1, #c2, #c3, #c4 {
+  margin-bottom: 0;
+}
+
+
+#timer {
+  display: block;
+  font-size: 32px;
+  width: 650px;
+  padding-top: 30px;
+  margin: auto;
+  clear: both;
+  font-family: Arial;
+}
+
+#win, #lose {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#win {
+  display: none;
+}
+
+#lose {
+  display: none;
+}
+
+.modal {
+  margin-top: 7em;
+  text-align: center;
+
+}
+
+.modal .container {
+  display: block;
+  font-size: 48px;;
+  position: relative;
+  height: auto;
+  width: 300px;
+  padding: 30px;
+  background: #fff;
+  margin: auto;
+  box-shadow: 5px 5px 5px;
+}
+
+.char1, .char2, .char3, .char4 {
+  display: inline-block;
+  margin: -5px;
+  animation: max 1s ease-in-out infinite;
+}
+
+.char2 {
+  animation-delay: 100ms;
+}
+
+.char3 {
+  animation-delay: 200ms;
+}
+
+.char4 {
+  animation-delay: 300ms;
+}
+
+
+
+@keyframes max {
+  from {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.7);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+button {
+  height: 40px;
+  margin-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(45deg,  #19668d, #22ab93);
+  border-radius: 7px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+button:active {
+  box-shadow: inset 2px 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
